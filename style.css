@@ -23,7 +23,7 @@ html, body {
 }
 
 .hero-content {
-  height: 100svh;
+  /*height: 100svh;*/
   margin: 0% 8%;
   background-color: #161616;
 }
