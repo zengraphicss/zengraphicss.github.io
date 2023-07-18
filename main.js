@@ -20,8 +20,17 @@ document.addEventListener('DOMContentLoaded', function () {
         check.checked = false;
       });
     });
-  });
   
+      // Add an event listener to close the navigation when the "HOME" link is clicked
+    const homeLink = document.querySelector('.nav-space[href="#"]');
+    homeLink.addEventListener('click', function () {
+      check.checked = false;
+    });
+  });
+
+
+
+
 
 // OUR WORK SECTION USAGE
 
@@ -44,4 +53,12 @@ function showLargeImage(image) {
 function hideLargeImage() {
   const enlargedImageOverlay = document.getElementById("enlarged-image-overlay");
   enlargedImageOverlay.style.display = "none";
+}
+
+
+
+
+// Add this JavaScript code to handle the "CONTACT US" button
+function openContactEmail() {
+  window.location.href = "mailto:zengraphics111@gmail.com";
 }
